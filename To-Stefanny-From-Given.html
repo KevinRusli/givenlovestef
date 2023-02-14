@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Stefanny</title>
+    </head>
+    <style>
+    body {
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: #9172EC;
+    }
+    .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+    .to {
+        color: white;
+        font-size: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        width: max-content;
+        border-right:5px solid;
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+    }
+    @keyframes cursor {
+        50% { border-color: transparent }
+    }
+    @keyframes typing {
+        from { width: 0 }
+    }
+    .from {
+        color: white;
+        font-size: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        width: max-content;
+        border-right:5px solid;
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+    }
+    @keyframes cursor {
+        50% { border-color: transparent }
+    }
+    @keyframes typing {
+        from { width: 0 }
+    }
+    .heart{
+    height: 150px;
+    width: 150px;
+    background-color: #F5FEFD;
+    position: relative;
+    transform:rotate(45deg);
+    box-shadow: -20px 20px 150px #F5FEFD;
+    animation:abigail 0.5s linear infinite alternate;
+    cursor: pointer;
+    }
+    .heart:hover {
+        opacity: 0.7;
+    }
+    @keyframes abigail {
+        0%{transform: rotate(45deg) scale(1.10); }
+        80% {transform: rotate(45deg) scale(1.0); }
+        100%{transform: rotate(45deg) scale(0.8); }
+    }
+    .heart::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: #F5FEFD;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #F5FEFD;
+    }
+    .heart::after {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: #F5FEFD;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #F5FEFD;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div>
+                <p class="to">To: Stefanny</p>
+            </div>
+            <a href="Letter.html">
+                <div class="heart"></div>
+            </a>    
+            <div>
+                <p class="from">From: Given</p>
+            </div>
+        </div>
+    </body>
+</html>
